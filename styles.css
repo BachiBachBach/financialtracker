@@ -1,0 +1,205 @@
+:root
+{
+    --primary-text: #dfdfdf;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+    height: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+
+
+@media (max-width: 476px) {
+    body {
+        max-width: 476px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    body {
+        max-width: 576px;
+    }
+
+}
+
+@media (max-width: 676px) {
+    body {
+        max-width: 676px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    body {
+        max-width: 800px;
+    }
+
+}
+
+@media (max-width: 1076px) {
+    body {
+        max-width: 1076px;
+    }
+
+
+}
+
+@media (max-width: 1276px) {
+    body {
+        max-width: 1276px;
+    }
+}
+
+@media (max-width: 1576px) {
+    body {
+        max-width: 1576px;
+    }
+}
+
+@media (max-width: 1776px) {
+    body {
+        max-width: 1776px;
+    }
+}
+
+header
+{
+    background-color: rgb(108, 111, 116);
+    height: 5%;
+}
+
+
+.container
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    background-color: rgb(53, 55, 58);
+}
+
+
+.income
+{
+    display: block;
+    height: 100%;
+    color: var(--primary-text);
+    border-left: 0.5px solid gray;
+    border-right: 0.5px solid gray;
+    text-align: center;
+    background-color: rgb(90, 90, 91);
+    animation: forwards 1000ms loadingin;
+}
+
+
+
+.expenses
+{
+    display: none;
+    height: 100%;
+    color: var(--primary-text);
+    border-left: 0.5px solid gray;
+    border-right: 0.5px solid gray;
+    text-align: center;
+    background-color: rgb(90, 90, 91);
+    animation: forwards 1000ms loadingin;
+}
+
+.owed
+{
+    display: none;
+    height: 100%;
+    color: var(--primary-text);
+    border-left: 0.5px solid gray;
+    border-right: 0.5px solid gray;
+    text-align: center;
+    background-color: rgb(90, 90, 91);
+    animation: forwards 500ms loadingin;
+}
+
+@keyframes loadingin
+{
+    25%
+    {
+        opacity: 25%;
+    }
+    50%
+    {
+        opacity: 50%;
+    }
+    75%
+    {
+        opacity: 75%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+
+.income h1
+{
+    margin-top: 15px;
+}
+
+.expenses h1
+{
+    margin-top: 15px;
+}
+
+.owed h1
+{
+    margin-top: 15px;
+}
+
+
+.income p
+{
+    margin: 1rem 8px;
+}
+
+.expenses p
+{
+    margin: 1rem 8px;
+}
+
+.owed p
+{
+    margin: 1rem 8px;
+}
+
+.income .income-amount
+{
+    color: rgb(52, 174, 52)
+}
+
+.expenses .expenses-amount
+{
+    color: rgb(237, 63, 63);
+}
+
+.owed .owed-amount
+{
+    color: rgb(80, 80, 216);
+}
+
+
